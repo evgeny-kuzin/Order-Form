@@ -57,11 +57,11 @@ function tt_order_form_enqueue_js_css(){
 /**
  * Add GitHub Updater
  */
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/boosta-ltd/plagiarism-checker',
+require 'plugin-update/plugin-update.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdate(
+    'https://github.com/evgeny-kuzin/Order-Form',
     __FILE__,
-    'plagiarism-checker'
+    'Order-Form'
 );
 
 //Optional: If you're using a private repository, specify the access token like this:
